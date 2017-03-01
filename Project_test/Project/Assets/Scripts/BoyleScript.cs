@@ -10,15 +10,13 @@ public class BoyleScript : MonoBehaviour
     public GameObject dial, therm;
     public Text volumeText, pressureText;
     private int k, count;
-    private float p, v,w,h;
+    private float p, v;
     private float[] pressureResult, volumeResult;
     // Use this for initialization
     void Start()
     {
-        k = 6000;
+        k = 1000;
         gauge();
-        w = 1920f;
-        h = 1080;
         pressureResult = new float[10];
         volumeResult = new float[10];
     }
@@ -26,11 +24,11 @@ public class BoyleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.KeypadMinus))
+        if (Input.GetKey(KeyCode.KeypadMinus) && (125 - (k / ((pressure.value * 30) - 30)))>5)
         {
             pressure.value = pressure.value - 0.01f;
         }
-        if(Input.GetKey(KeyCode.KeypadPlus))
+        if(Input.GetKey(KeyCode.KeypadPlus) && (125 - (k / ((pressure.value * 30) - 30))) < 125)
         {
             pressure.value = pressure.value + 0.01f;
         }
@@ -60,6 +58,9 @@ public class BoyleScript : MonoBehaviour
         /*float ratioX = Screen.width / w;
         float ratioY = Screen.height / h;
         GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3(ratioX, ratioY, 1));*/
+        //float ratioX = Screen.width /1920;
+        //float ratioY = Screen.height / 1080;
+        //GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3(ratioX, ratioY, 1));
         if (UI.isOn==true)
         {
             rs.TwoResults("Pressure(kPa)", "Volume(cm^3)", pressureResult, volumeResult, count);
