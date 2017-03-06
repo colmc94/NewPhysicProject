@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: df8dd7d47d3827f40b2460713c1c7f69
+timeCreated: 1488675854
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: defaultobject
+    100004: defaultobject 1
+    100006: defaultobject 10
+    100008: defaultobject 11
+    100010: defaultobject 2
+    100012: defaultobject 3
+    100014: defaultobject 4
+    100016: defaultobject 5
+    100018: defaultobject 6
+    100020: defaultobject 7
+    100022: defaultobject 8
+    100024: defaultobject 9
+    100026: defaultobject_1
+    100028: defaultobject_10
+    100030: defaultobject_11
+    100032: defaultobject_12
+    100034: defaultobject_2
+    100036: defaultobject_3
+    100038: defaultobject_4
+    100040: defaultobject_5
+    100042: defaultobject_6
+    100044: defaultobject_7
+    100046: defaultobject_8
+    100048: defaultobject_9
+    100050: Object.1
+    100052: Object.1_0
+    400000: //RootNode
+    400002: defaultobject
+    400004: defaultobject 1
+    400006: defaultobject 10
+    400008: defaultobject 11
+    400010: defaultobject 2
+    400012: defaultobject 3
+    400014: defaultobject 4
+    400016: defaultobject 5
+    400018: defaultobject 6
+    400020: defaultobject 7
+    400022: defaultobject 8
+    400024: defaultobject 9
+    400026: defaultobject_1
+    400028: defaultobject_10
+    400030: defaultobject_11
+    400032: defaultobject_12
+    400034: defaultobject_2
+    400036: defaultobject_3
+    400038: defaultobject_4
+    400040: defaultobject_5
+    400042: defaultobject_6
+    400044: defaultobject_7
+    400046: defaultobject_8
+    400048: defaultobject_9
+    400050: Object.1
+    400052: Object.1_0
+    2300000: defaultobject_1
+    2300002: defaultobject_10
+    2300004: defaultobject_11
+    2300006: defaultobject_12
+    2300008: defaultobject_2
+    2300010: defaultobject_3
+    2300012: defaultobject_4
+    2300014: defaultobject_5
+    2300016: defaultobject_6
+    2300018: defaultobject_7
+    2300020: defaultobject_8
+    2300022: defaultobject_9
+    2300024: Object.1_0
+    3300000: defaultobject_1
+    3300002: defaultobject_10
+    3300004: defaultobject_11
+    3300006: defaultobject_12
+    3300008: defaultobject_2
+    3300010: defaultobject_3
+    3300012: defaultobject_4
+    3300014: defaultobject_5
+    3300016: defaultobject_6
+    3300018: defaultobject_7
+    3300020: defaultobject_8
+    3300022: defaultobject_9
+    3300024: Object.1_0
+    4300000: Object.1_0
+    4300002: defaultobject_1
+    4300004: defaultobject_2
+    4300006: defaultobject_3
+    4300008: defaultobject_4
+    4300010: defaultobject_5
+    4300012: defaultobject_6
+    4300014: defaultobject_7
+    4300016: defaultobject_8
+    4300018: defaultobject_9
+    4300020: defaultobject_10
+    4300022: defaultobject_11
+    4300024: defaultobject_12
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
