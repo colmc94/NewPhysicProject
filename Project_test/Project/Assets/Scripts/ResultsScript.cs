@@ -17,7 +17,6 @@ public class ResultsScript : MonoBehaviour {
         float ratioX = Screen.width / w;
         float ratioY = Screen.height / h;
         GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3(ratioX, ratioY, 1));
-        GUI.Box(new Rect(550, 250, 800, 700), "");
         GUI.Label(new Rect(750, 75, 300, 100), "", title);
     }
     public void TwoResults(string heading1,string heading2,float[]results1,float[]results2,int size)
@@ -36,6 +35,7 @@ public class ResultsScript : MonoBehaviour {
     public void ThreeResults(string h1,string h2,string h3,float[]r1,float[]r2,float[]r3,int size)
     {
         Setup();
+        GUI.Box(new Rect(550, 250, 800, 700), "");
         GUI.Label(new Rect(600, 300, 240, 60), h1, heading);
         GUI.Label(new Rect(825, 300, 240, 60), h2, heading);
         GUI.Label(new Rect(1050, 300, 240, 60), h3, heading);
@@ -53,6 +53,7 @@ public class ResultsScript : MonoBehaviour {
     public void FiveColumns(string h1,string h2,string h3,string h4,string h5, float[] r1, float[] r2, float[] r3, float[] r4, float[] r5,int size)
     {
         Setup();
+        GUI.Box(new Rect(350, 250, 1200, 700), "");
         GUI.Label(new Rect(350, 300, 240, 60), h1,heading);
         GUI.Label(new Rect(550, 300, 240, 60), h2, heading);
         GUI.Label(new Rect(800, 300, 240, 60), h3, heading);
