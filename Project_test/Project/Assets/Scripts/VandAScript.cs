@@ -132,20 +132,6 @@ public class VandAScript : MonoBehaviour {
         if (UI.isOn == true)
         {
             rs.FiveColumns("Time 1(s)", "Time 2(s)", "Velocity 1(m/s)", "Velocity 2(m/s)", "Acceleration(m/s^2)", time1Results, time2Results, velocity1Results, velocity2Results, accelerationResults,num);
-            /*GUI.Box(new Rect(550, 250, 800, 700), "");
-            GUI.Label(new Rect(600,300, 240, 60), "Time 1(s)");
-            GUI.Label(new Rect(750,300, 240, 60), "Time 2(s)");
-            GUI.Label(new Rect(900,300, 240, 60), "Velocity 1(m/s)");
-            GUI.Label(new Rect(1050 ,300, 240, 60), "Velocity 2(m/s)");
-            GUI.Label(new Rect(1200,300, 240, 60), "Acceleration(m/s^2)");
-            for (int i = 0; i < num; i++)
-            {
-                GUI.Label(new Rect(600, (Screen.height / 4) + (20) * i, 240, 60), time1Results[i].ToString("f4"));
-                GUI.Label(new Rect((Screen.width / 10) * 4, (Screen.height / 4) + (20) * i, 240, 60), time2Results[i].ToString("f4"));
-                GUI.Label(new Rect((Screen.width / 10) * 5, (Screen.height / 4) + (20) * i, 240, 60), velocity1Results[i].ToString("f4"));
-                GUI.Label(new Rect((Screen.width / 10) * 6, (Screen.height / 4) + (20) * i, 240, 60), velocity2Results[i].ToString("f4"));
-                GUI.Label(new Rect((Screen.width / 10) * 7, (Screen.height / 4) + (20) * i, 240, 60), accelerationResults[i].ToString("f4"));
-            }*/
         }
     }
 }
