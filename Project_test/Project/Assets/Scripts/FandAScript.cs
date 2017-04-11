@@ -5,7 +5,7 @@ using System.Collections;
 
 public class FandAScript : MonoBehaviour
 {
-    public GameObject s1, f1, s2, f2,normal;
+    public GameObject s1, f1, s2, f2,normal,weight;
     public ResultsScript rs;
     public Rigidbody vehicle;
     public Text /*time1Text,time2Text,v1Text,v2Text,accelerationText*/forceSliderText, timeSliderText;
@@ -17,7 +17,7 @@ public class FandAScript : MonoBehaviour
     private LineRenderer lr1, lr2;
     private int count, num;
     private float time1, time2, velocity1, velocity2, acceleration, w, h;
-    private Vector3 cardPosition, vehiclePosition;
+    private Vector3 cardPosition, vehiclePosition,weightPosition;
     private float[] time1Results, time2Results, velocity1Results, velocity2Results, accelerationResults;
     // Use this for initialization
     void Start()
@@ -28,6 +28,7 @@ public class FandAScript : MonoBehaviour
         card = GetComponent<Rigidbody>();
         cardPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         vehiclePosition = new Vector3(vehicle.transform.position.x, vehicle.transform.position.y, vehicle.transform.position.z);
+        weightPosition = new Vector3(weight.transform.position.x, weight.transform.position.y, weight.transform.position.z);
         time1Results = new float[10];
         time2Results = new float[10];
         velocity1Results = new float[10];
@@ -49,6 +50,7 @@ public class FandAScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        weight.transform.position = new Vector3(weightPosition.x, weightPosition.y-(Mathf.Abs(cardPosition.z - transform.position.z)), weightPosition.z);
         lr1.SetPosition(0, s1.transform.position);
         lr1.SetPosition(1, f1.transform.position);
         lr2.SetPosition(0, s2.transform.position);
