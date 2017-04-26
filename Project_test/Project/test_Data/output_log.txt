@@ -18,61 +18,117 @@ Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProj
 Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.048 seconds
+- Completed reload, in  0.049 seconds
 Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.376985 ms
+UnloadTime: 3.777457 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 52d4 -> priority: 1 
+  Thread -> id: 1abc -> priority: 1 
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.095444 ms
+UnloadTime: 4.385895 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 353.
-Total: 0.241972 ms (FindLiveObjects: 0.032730 ms CreateObjectMapping: 0.012273 ms MarkObjects: 0.189954 ms  DeleteObjects: 0.006136 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 366.
+Total: 0.237881 ms (FindLiveObjects: 0.025716 ms CreateObjectMapping: 0.012858 ms MarkObjects: 0.191415 ms  DeleteObjects: 0.007013 ms)
 
-IndexOutOfRangeException: Array index is out of range.
-  at GravityScript.storeValue () [0x00000] in <filename unknown>:0 
-  at GravityScript.ResetExp () [0x00000] in <filename unknown>:0 
-  at UnityEngine.Events.InvokableCall.Invoke (System.Object[] args) [0x00000] in <filename unknown>:0 
-  at UnityEngine.Events.InvokableCallList.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
-  at UnityEngine.Events.UnityEventBase.Invoke (System.Object[] parameters) [0x00000] in <filename unknown>:0 
-  at UnityEngine.Events.UnityEvent.Invoke () [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.Button.Press () [0x00000] in <filename unknown>:0 
-  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00000] in <filename unknown>:0 
-  at UnityEngine.EventSystems.ExecuteEvents.Execute (IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00000] in <filename unknown>:0 
-  at UnityEngine.EventSystems.ExecuteEvents.Execute[IPointerClickHandler] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) [0x00000] in <filename unknown>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent()
-UnityEngine.EventSystems.StandaloneInputModule:Process()
-UnityEngine.EventSystems.EventSystem:Update()
+Trigger Enter
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Trigger Enter
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.497095 ms
+UnloadTime: 0.518428 ms
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 364.
-Total: 0.200182 ms (FindLiveObjects: 0.019579 ms CreateObjectMapping: 0.010228 ms MarkObjects: 0.156639 ms  DeleteObjects: 0.013442 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 358.
+Total: 0.217424 ms (FindLiveObjects: 0.022210 ms CreateObjectMapping: 0.010520 ms MarkObjects: 0.157515 ms  DeleteObjects: 0.026885 ms)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.386629 ms
+UnloadTime: 0.715688 ms
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 385.
-Total: 0.373186 ms (FindLiveObjects: 0.047050 ms CreateObjectMapping: 0.011397 ms MarkObjects: 0.289022 ms  DeleteObjects: 0.024840 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 380.
+Total: 0.644382 ms (FindLiveObjects: 0.040620 ms CreateObjectMapping: 0.029223 ms MarkObjects: 0.524565 ms  DeleteObjects: 0.049095 ms)
 
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.540346 ms
+UnloadTime: 0.471670 ms
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 364.
-Total: 0.291068 ms (FindLiveObjects: 0.047342 ms CreateObjectMapping: 0.010520 ms MarkObjects: 0.219469 ms  DeleteObjects: 0.013150 ms)
+Total: 0.188492 ms (FindLiveObjects: 0.017826 ms CreateObjectMapping: 0.010520 ms MarkObjects: 0.147872 ms  DeleteObjects: 0.011689 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.557588 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 385.
+Total: 0.459396 ms (FindLiveObjects: 0.027470 ms CreateObjectMapping: 0.021333 ms MarkObjects: 0.374355 ms  DeleteObjects: 0.035360 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.457058 ms
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 364.
+Total: 0.211579 ms (FindLiveObjects: 0.017534 ms CreateObjectMapping: 0.010520 ms MarkObjects: 0.157223 ms  DeleteObjects: 0.013150 ms)
 
