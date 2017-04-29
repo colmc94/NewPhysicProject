@@ -12,8 +12,7 @@ public class ButtonScript : MonoBehaviour
     void Start()
     {
         img = GetComponentsInChildren<Image>();//Gets all images associtated with the button. 1st in array is the image background of button. 2nd is image of experiment.
-        txt = GetComponentInChildren<Text>();
-        Debug.Log(txt.transform.name);
+        txt = GetComponentInChildren<Text>();//Get the name of the scene to button should go to when clicked.
     }
     // Update is called once per frame
     void Update()
@@ -22,7 +21,7 @@ public class ButtonScript : MonoBehaviour
     }
     public void LoadExperiment()
     {
-        SceneManager.LoadScene(txt.transform.name);//Loads Experiment
+        SceneManager.LoadScene(txt.transform.name);//Loads Experiment using the text from the button.
     }
     public void ShowImage()
     {

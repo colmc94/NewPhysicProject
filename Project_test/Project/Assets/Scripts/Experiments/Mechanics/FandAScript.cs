@@ -13,7 +13,6 @@ public class FandAScript : MonoBehaviour
     public Slider forceSlider, timeSlider;
     public Material white;
     private Rigidbody card;
-    private Renderer normalRend;
     private LineRenderer lr1, lr2;
     private int count, num;
     private float time1, time2, velocity1, velocity2, acceleration, w, h;
@@ -37,7 +36,6 @@ public class FandAScript : MonoBehaviour
         num = 0;
         w = 1920f;
         h = 1080;
-        normalRend = normal.GetComponent<Renderer>();
         lr1 = s1.AddComponent<LineRenderer>();
         lr2 = s2.AddComponent<LineRenderer>();
         lr1.material = white;
