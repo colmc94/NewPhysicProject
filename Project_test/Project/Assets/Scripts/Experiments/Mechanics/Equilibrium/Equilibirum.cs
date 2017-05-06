@@ -6,45 +6,19 @@ public class Equilibirum : MonoBehaviour {
     public GameObject weight1,weight2,weight3,weight4,newtonGauge1,newtonGauge2,gaugeLevel1,gaugeLevel2;
     public Material stringMaterial;
     public Text gauge1Text,gauge2Text,clockwiseMoments0,clockwiseMoments50,clockwiseMoments75, anticlockwiseMoments0, anticlockwiseMoments50, anticlockwiseMoments75, error;
-    public CanvasGroup resultsGroup,instructionsGroup;
+    public CanvasGroupScript instructionsGroup;
     private float w1,w2,w3,w4,ng1,ng2,x,y,c;
     private bool results,instructions;
     // Use this for initialization
     void Start () {
+        instructionsGroup.OnCanvasGroup();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        Equation();
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            results = !results;
-            instructions = false;
-        }
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            instructions = !instructions;
-            results = false;
-        }
-        if (results)
-        {
-            resultsGroup.alpha = 1;
-            DisplayResults();
-        }
-        else
-        {
-            resultsGroup.alpha = 0;
-        }
-        if(instructions)
-        {
-            instructionsGroup.alpha = 1;
-        }
-        else
-        {
-            instructionsGroup.alpha = 0;
-        }
+        CalculateEquilibrium();
     }
-    private void Equation()
+    private void CalculateEquilibrium()
     {
         w1 = ((weight1.transform.position.x + 75) / 1.5f)*0.01f;
         w2 = ((weight2.transform.position.x + 75) / 1.5f) * 0.01f;

@@ -3,42 +3,43 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class CanvasGroupScript : MonoBehaviour {
+    public KeyCode key;
+    public CanvasGroup otherCanvasGroup1, otherCanvasGroup2;
     private CanvasGroup canvasGroup;
-    private Image canvasGroupImage;
-	void Start () {
+    void Start () {
         canvasGroup = GetComponent<CanvasGroup>();
-        canvasGroupImage = GetComponent<Image>();
 	}
-	
-	// Update is called once per frame
 	void Update () {
-	
+        if (Input.GetKeyDown(key))
+        {
+            ToggleCanvasGroup();
+            otherCanvasGroup1.alpha = 0;
+            otherCanvasGroup1.blocksRaycasts = false;
+            otherCanvasGroup2.alpha = 0;
+            otherCanvasGroup2.blocksRaycasts = false;
+        }
 	}
-    public void ToggleCanvasGroup()
+    private void ToggleCanvasGroup()
     {
         if (canvasGroup.alpha == 0)
         {
             canvasGroup.alpha = 1;
-            canvasGroupImage.enabled=true;
+            canvasGroup.blocksRaycasts=true;
         }
         else
         {
             canvasGroup.alpha = 0;
-            canvasGroupImage.enabled = false;
+            canvasGroup.blocksRaycasts = false;
         }
     }
     public void OnCanvasGroup()
     {
         canvasGroup.alpha = 1;
-        canvasGroupImage.enabled = true;
+        canvasGroup.blocksRaycasts= true;
     }
     public void OffCanvasGroup()
     {
         canvasGroup.alpha = 0;
-        canvasGroupImage.enabled = false;
-    }
-    public bool isOn()
-    {
-        return canvasGroup.alpha == 1;
+        canvasGroup.blocksRaycasts = false;
     }
 }

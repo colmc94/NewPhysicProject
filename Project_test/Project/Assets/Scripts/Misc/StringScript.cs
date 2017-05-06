@@ -14,7 +14,7 @@ public class StringScript : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         string1.SetPosition(0, transform.position);
         string1.SetPosition(1, finishPoint.transform.position);
     }

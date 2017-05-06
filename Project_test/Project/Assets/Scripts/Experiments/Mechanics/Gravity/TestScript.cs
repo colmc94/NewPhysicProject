@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class TestScript : MonoBehaviour {
+public class ResultsScript : MonoBehaviour {
     private Text results;
 	// Use this for initialization
 	void Start () {
@@ -15,6 +15,6 @@ public class TestScript : MonoBehaviour {
 	}
     public void AddResults(float x)
     {
-        results.text = results.text + x.ToString("f2")+"\n";
+        results.text = results.text + x.ToString("f3")+"\n";
     }
 }

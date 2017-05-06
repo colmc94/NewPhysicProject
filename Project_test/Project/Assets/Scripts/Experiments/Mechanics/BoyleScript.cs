@@ -4,7 +4,16 @@ using System.Collections;
 
 public class BoyleScript : MonoBehaviour
 {
-    public ResultsScript rs;
+    private float pressure, volume, k;
+    void Start()
+    {
+
+    }
+    void Update()
+    {
+
+    }
+    /*public ResultsScript rs;
     public Slider pressure;
     public Toggle UI;
     public GameObject dial, therm;
@@ -61,9 +70,9 @@ public class BoyleScript : MonoBehaviour
         //float ratioX = Screen.width /1920;
         //float ratioY = Screen.height / 1080;
         //GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3(ratioX, ratioY, 1));
-        if (UI.isOn==true)
+        /*if (UI.isOn==true)
         {
             rs.TwoResults("Pressure(kPa)", "Volume(cm^3)", pressureResult, volumeResult, count);
         }
-    }
+    }*/
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-public class ResultsScript : MonoBehaviour {
+public class OldResultScript : MonoBehaviour {
     private const float w = 1920, h = 1080;
     public GUIStyle heading, result,title,box;
 	// Use this for initialization

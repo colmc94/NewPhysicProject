@@ -8,7 +8,7 @@ public class SnellScript : MonoBehaviour {
     public Material white;
     public Slider IncidentRay;
     public Toggle UI;
-    public ResultsScript rs;
+    public OldResultScript rs;
     private Renderer normalRend;
     private int  num =0;
     private LineRenderer lr1,lr2,lr3;

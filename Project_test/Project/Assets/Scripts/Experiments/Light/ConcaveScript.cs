@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class ConcaveScript : MonoBehaviour {
-    public ResultsScript rs;
+    public OldResultScript rs;
     public Material image;
     public Text test,test1,uSliderText,vSliderText;
     public Slider uSlider,vSlider;

@@ -10,7 +10,7 @@ public class HeightScript : MonoBehaviour {
     private Vector3 offset;
 
     void Start () {
-        heightText.text = "Height : " + (transform.position.y - 17).ToString("f2") + " cm";
+        heightText.text = "Height : " + ((transform.position.y - 17)/100).ToString("f2") + " m";
     }
 	
 	void Update () {
@@ -45,6 +45,6 @@ public class HeightScript : MonoBehaviour {
         if (!ballScript.isLanded()) {
             ball.transform.position = new Vector3(ball.transform.position.x, transform.position.y - 9.5f, ball.transform.position.z);
         }
-        heightText.text = "Height : " + (transform.position.y - 17).ToString("f2") + " cm";
+        heightText.text = "Height : " + ((transform.position.y - 17) / 100).ToString("f2") + " m";
     }
 }
