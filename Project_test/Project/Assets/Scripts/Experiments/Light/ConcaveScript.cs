@@ -7,6 +7,7 @@ public class ConcaveScript : MonoBehaviour {
     public MirrorScript mirror;
     public ScreenScript screen;
     public ResultsScript uResults,vResults,uInverseResults,vInverseResults,fResults;
+    public Text resultsText;
     private float u,v,f;
     private int numberOfResults;
 	// Use this for initialization
@@ -20,6 +21,7 @@ public class ConcaveScript : MonoBehaviour {
         if (numberOfResults >= 10)
         {
             resultsGroup.OnCanvasGroup();
+            resultsText.text = "10 Results Recorded";
         }
     }
     private float CalculateF(float x,float y)
@@ -31,12 +33,13 @@ public class ConcaveScript : MonoBehaviour {
         u = mirror.GetU();
         v = screen.GetV();
         f = CalculateF(u, v);
-        uResults.AddResults(u);
-        vResults.AddResults(v);
+        uResults.AddResults(u,2);
+        vResults.AddResults(v,2);
         uInverseResults.AddResults(1/u);
         vInverseResults.AddResults(1/v);
         fResults.AddResults(f);
         numberOfResults++;
         Debug.Log(numberOfResults);
+        resultsText.text = "Result " + numberOfResults + " Recorded";
     }
 }

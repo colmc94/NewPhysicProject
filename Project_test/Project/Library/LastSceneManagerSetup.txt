@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Experiments/Light/Convex.unity
+- path: Assets/_Scenes/Experiments/Mechanics/VandA.unity
   isLoaded: 1
   isActive: 1

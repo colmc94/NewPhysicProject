@@ -35,7 +35,7 @@ public class AandFScript : MonoBehaviour
         uResults.AddResults(initalVelocity);
         vResults.AddResults(finalVelocity);
         aResults.AddResults(acceleration);
-        forceResults.AddResults(newtonScript.GetNewtons());
+        forceResults.AddResults(newtonScript.GetNewtons(), 0);
         numberOfResults++;
     }
 }

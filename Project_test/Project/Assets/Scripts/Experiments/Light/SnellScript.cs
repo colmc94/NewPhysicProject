@@ -3,44 +3,45 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class SnellScript : MonoBehaviour {
-    public GameObject s1, f1,s2,f2,s3,f3,raybox,normal;
-    public Text iText,rText,nText;
-    public Material white;
-    public Slider IncidentRay;
-    public Toggle UI;
-    public OldResultScript rs;
-    private Renderer normalRend;
-    private int  num =0;
-    private LineRenderer lr1,lr2,lr3;
-    private float i,r,n=2f,temp,w,h;
-    private float[] i_results, r_results, sinI_results, sinR_results, n_results;
-	// Use this for initialization
-	void Start () {
-        normalRend = normal.GetComponent<Renderer>();
-        lr1 = s1.AddComponent<LineRenderer>();
-        lr2 = s2.AddComponent<LineRenderer>();
-        lr3 = s3.AddComponent<LineRenderer>();
-        lr1.material = white;
-        lr2.material = white;
-        lr3.material = white;
-        lr1.SetColors(Color.yellow,Color.yellow);
-        lr2.SetColors(Color.yellow, Color.yellow);
-        lr3.SetColors(Color.yellow, Color.yellow);
-        lr1.SetWidth(0.5f, 0.5f);
-        lr2.SetWidth(0.5f, 0.5f);
-        lr3.SetWidth(0.5f, 0.5f);
-        i_results = new float[10];
-        r_results = new float[10];
-        sinI_results = new float[10];
-        sinR_results = new float[10];
-        n_results = new float[10];
-        w = 1920;
-        h = 1080;
+    public CanvasGroupScript resultsGroup, instructionsGroup;
+    public RayboxScript raybox;
+    public ResultsScript iResults, rResults, siniResults, sinrResults, nResults;
+    public Text resultsText;
+    private float i, r, n,sinI,sinR;
+    private int numberOfResults;
+    // Use this for initialization
+    void Start () {
+        instructionsGroup.OnCanvasGroup();
+        /* normalRend = normal.GetComponent<Renderer>();
+         lr1 = s1.AddComponent<LineRenderer>();
+         lr2 = s2.AddComponent<LineRenderer>();
+         lr3 = s3.AddComponent<LineRenderer>();
+         lr1.material = white;
+         lr2.material = white;
+         lr3.material = white;
+         lr1.SetColors(Color.yellow,Color.yellow);
+         lr2.SetColors(Color.yellow, Color.yellow);
+         lr3.SetColors(Color.yellow, Color.yellow);
+         lr1.SetWidth(0.5f, 0.5f);
+         lr2.SetWidth(0.5f, 0.5f);
+         lr3.SetWidth(0.5f, 0.5f);
+         i_results = new float[10];
+         r_results = new float[10];
+         sinI_results = new float[10];
+         sinR_results = new float[10];
+         n_results = new float[10];
+         w = 1920;
+         h = 1080;*/
     }
 	
 	// Update is called once per frame
 	void Update () {
-        lr1.SetPosition(0, s1.transform.position);
+        if (numberOfResults >= 10)
+        {
+            resultsGroup.OnCanvasGroup();
+            resultsText.text = "10 Results Recorded";
+        }
+        /*lr1.SetPosition(0, s1.transform.position);
         lr1.SetPosition(1, f1.transform.position);
         lr2.SetPosition(0, s2.transform.position);
         lr2.SetPosition(1, f2.transform.position);
@@ -65,9 +66,9 @@ public class SnellScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.N))
         {
             normalRend.enabled = !normalRend.enabled;
-        }
+        }*/
     }
-    public void ChangeI()
+    /*public void ChangeI()
     {
         raybox.transform.position = new Vector3(raybox.transform.position.x, raybox.transform.position.y, -0.5f - IncidentRay.value);
         raybox.transform.Rotate(new Vector3(0,temp-IncidentRay.value,0));
@@ -100,5 +101,23 @@ public class SnellScript : MonoBehaviour {
         {
             rs.FiveColumns("Angle I", "Angle R", "sin I", "sin R", "sin I / sin R", i_results,r_results, sinI_results, sinR_results, n_results, num);
         }
+    }*/
+    void OnMouseDown()
+    {
+        AddResults();
+    }
+    private void AddResults()
+    {
+        i = raybox.getI();
+        r = raybox.getR();
+        sinI = Mathf.Sin(Mathf.Deg2Rad * i);
+        sinR= Mathf.Sin(Mathf.Deg2Rad * r);
+        iResults.AddResults(i, 2);
+        rResults.AddResults(r, 2);
+        siniResults.AddResults(sinI);
+        sinrResults.AddResults(sinR);
+        nResults.AddResults(sinI/ sinR);
+        numberOfResults++;
+        resultsText.text = "Result " + numberOfResults + " Recorded";
     }
 }
