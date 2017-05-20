@@ -4,6 +4,7 @@ using System.Collections;
 
 public class PendulumHeightScript : MonoBehaviour
 {
+    public PendulumBallScript pendulumBall;
     public Text heightText;
     public HingeJointScript pendulumJoint;
     private Vector3 screenPoint;
@@ -20,13 +21,14 @@ public class PendulumHeightScript : MonoBehaviour
     }
     public float getHeight()
     {
-        return transform.position.y - 19;
+        return (transform.position.y - 19)/100;
     }
     void OnMouseDown()
     {
         pendulumJoint.DestroyJoint();
         screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
         offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(screenPoint.x, Input.mousePosition.y, screenPoint.z));
+        pendulumBall.ResetPosition();
     }
     void OnMouseDrag()
     {
@@ -45,7 +47,6 @@ public class PendulumHeightScript : MonoBehaviour
             transform.position = new Vector3(cursorPosition.x, 99, cursorPosition.z);
         }
         heightText.text = "Height : " + ((transform.position.y - 19) / 100).ToString("f2") + " m";
-        pendulumJoint.MoveJoint(transform.position.y);
     }
     void OnMouseUp()
     {

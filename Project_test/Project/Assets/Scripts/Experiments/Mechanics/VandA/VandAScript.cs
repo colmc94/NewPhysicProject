@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
-public class VandAScript : MonoBehaviour {
+public class VandAScript : MonoBehaviour{
     public ResultsScript time1Results, time2Results, vResults, uResults, aResults;
     public TimerScript timeScript1, timeScript2;
     public GameObject glider,lightGate1,lightGate2;
     public CanvasGroupScript resultsGroup, instructionsGroup;
+    public Text resultsText;
     private Vector3 startPosition;
     private int numberOfResults;
     private float lengthOfVehicle,initalVelocity,finalVelocity,acceleration,s;
@@ -33,5 +35,6 @@ public class VandAScript : MonoBehaviour {
         vResults.AddResults(finalVelocity);
         aResults.AddResults(acceleration);
         numberOfResults++;
+        resultsText.text = "Result " + numberOfResults + " Recorded";
     }
 }

@@ -1,0 +1,226 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.039 seconds
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test3_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.637369 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3c60 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.862501 ms
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 353.
+Total: 0.363251 ms (FindLiveObjects: 0.059031 ms CreateObjectMapping: 0.023378 ms MarkObjects: 0.230867 ms  DeleteObjects: 0.049095 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.657241 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 644.
+Total: 0.351853 ms (FindLiveObjects: 0.053771 ms CreateObjectMapping: 0.016073 ms MarkObjects: 0.270904 ms  DeleteObjects: 0.010520 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.705753 ms
+
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 357.
+Total: 0.345132 ms (FindLiveObjects: 0.038283 ms CreateObjectMapping: 0.024255 ms MarkObjects: 0.206319 ms  DeleteObjects: 0.075981 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.638830 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 550.
+Total: 0.293406 ms (FindLiveObjects: 0.025424 ms CreateObjectMapping: 0.011397 ms MarkObjects: 0.245771 ms  DeleteObjects: 0.010520 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.OnCanvasGroup () [0x00000] in <filename unknown>:0 
+  at VandAScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.748712 ms
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 357.
+Total: 0.714520 ms (FindLiveObjects: 0.036529 ms CreateObjectMapping: 0.010812 ms MarkObjects: 0.240219 ms  DeleteObjects: 0.426374 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.369095 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 483.
+Total: 0.274410 ms (FindLiveObjects: 0.020748 ms CreateObjectMapping: 0.011397 ms MarkObjects: 0.231744 ms  DeleteObjects: 0.010228 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.OnCanvasGroup () [0x00000] in <filename unknown>:0 
+  at GravityScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.547945 ms
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 358.
+Total: 0.376109 ms (FindLiveObjects: 0.035068 ms CreateObjectMapping: 0.023378 ms MarkObjects: 0.261552 ms  DeleteObjects: 0.055525 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.490666 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 632.
+Total: 0.289899 ms (FindLiveObjects: 0.035945 ms CreateObjectMapping: 0.016949 ms MarkObjects: 0.227068 ms  DeleteObjects: 0.009643 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at BoylesLawScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.512584 ms
+
+Unloading 86 unused Assets to reduce memory usage. Loaded Objects now: 358.
+Total: 0.360328 ms (FindLiveObjects: 0.018703 ms CreateObjectMapping: 0.012566 ms MarkObjects: 0.211579 ms  DeleteObjects: 0.117479 ms)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.415561 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 777.
+Total: 0.342209 ms (FindLiveObjects: 0.064876 ms CreateObjectMapping: 0.029515 ms MarkObjects: 0.237588 ms  DeleteObjects: 0.009643 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.583013 ms
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 358.
+Total: 0.402118 ms (FindLiveObjects: 0.025716 ms CreateObjectMapping: 0.011689 ms MarkObjects: 0.260383 ms  DeleteObjects: 0.104036 ms)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.563725 ms
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 435.
+Total: 0.289022 ms (FindLiveObjects: 0.052310 ms CreateObjectMapping: 0.011397 ms MarkObjects: 0.211579 ms  DeleteObjects: 0.013442 ms)
+
+Count = 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Mouse Down
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Mouse Down
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Mouse Down
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Mouse Down
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Count = 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+

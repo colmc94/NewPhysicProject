@@ -21,10 +21,10 @@ public class GearScript : MonoBehaviour
     }
     void OnMouseOver()
     {
-        title.color = new Color(0, 0, 0, 256);
-        g1.transform.rotation = Quaternion.Euler(0, count / 2, 0);
-        g2.transform.rotation = Quaternion.Euler(0, -count / 2, 0);
-        g3.transform.rotation = Quaternion.Euler(0, count / 2, 0);
+        title.color = new Color(0.5f, 0.5f, 0.5f, 256);
+        g1.transform.localRotation = Quaternion.Euler(0, count / 2, 0);
+        g2.transform.localRotation = Quaternion.Euler(0, -count / 2, 0);
+        g3.transform.localRotation = Quaternion.Euler(0, count / 2, 0);
         count++;
     }
     void OnMouseDown()

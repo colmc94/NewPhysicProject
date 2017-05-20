@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LightbulbScript : MonoBehaviour
@@ -19,7 +20,11 @@ public class LightbulbScript : MonoBehaviour
     }
     void OnMouseOver()
     {
-        title.color = new Color(0, 0, 0, 256);
+        title.color = new Color(0.5f, 0.5f, 0.5f, 256);
         lightBulb.enabled = true;
+    }
+    void OnMouseDown()
+    {
+        SceneManager.LoadScene("LightMenu");
     }
 }

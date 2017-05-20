@@ -1,0 +1,248 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.041 seconds
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Colm\Documents\GitHub\NewPhysicProject\NewPhysicProject\Project_test\Project\test4_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.457351 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 39b4 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.773665 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 377.
+Total: 0.282301 ms (FindLiveObjects: 0.038867 ms CreateObjectMapping: 0.012273 ms MarkObjects: 0.215379 ms  DeleteObjects: 0.015780 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.727087 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 523.
+Total: 0.365004 ms (FindLiveObjects: 0.044127 ms CreateObjectMapping: 0.013150 ms MarkObjects: 0.292529 ms  DeleteObjects: 0.014904 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.OnCanvasGroup () [0x00000] in <filename unknown>:0 
+  at GravityScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.617498 ms
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.300128 ms (FindLiveObjects: 0.040328 ms CreateObjectMapping: 0.010520 ms MarkObjects: 0.219470 ms  DeleteObjects: 0.029516 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.440109 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 637.
+Total: 0.374648 ms (FindLiveObjects: 0.049095 ms CreateObjectMapping: 0.033022 ms MarkObjects: 0.261260 ms  DeleteObjects: 0.030684 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.OnCanvasGroup () [0x00000] in <filename unknown>:0 
+  at BoylesLawScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.568402 ms
+
+Unloading 85 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.389260 ms (FindLiveObjects: 0.048511 ms CreateObjectMapping: 0.012273 ms MarkObjects: 0.231452 ms  DeleteObjects: 0.096438 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.574831 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 613.
+Total: 0.495635 ms (FindLiveObjects: 0.071305 ms CreateObjectMapping: 0.030100 ms MarkObjects: 0.379324 ms  DeleteObjects: 0.014027 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.608731 ms
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.323507 ms (FindLiveObjects: 0.037406 ms CreateObjectMapping: 0.011105 ms MarkObjects: 0.226191 ms  DeleteObjects: 0.047634 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.449461 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 523.
+Total: 0.329059 ms (FindLiveObjects: 0.050849 ms CreateObjectMapping: 0.023086 ms MarkObjects: 0.242265 ms  DeleteObjects: 0.012858 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.OnCanvasGroup () [0x00000] in <filename unknown>:0 
+  at GravityScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.504694 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 523.
+Total: 0.324676 ms (FindLiveObjects: 0.029223 ms CreateObjectMapping: 0.011105 ms MarkObjects: 0.278210 ms  DeleteObjects: 0.005552 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasGroupScript.OnCanvasGroup () [0x00000] in <filename unknown>:0 
+  at GravityScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.487452 ms
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.286685 ms (FindLiveObjects: 0.018118 ms CreateObjectMapping: 0.011105 ms MarkObjects: 0.225607 ms  DeleteObjects: 0.031561 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.388091 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 652.
+Total: 0.387214 ms (FindLiveObjects: 0.061077 ms CreateObjectMapping: 0.016949 ms MarkObjects: 0.296036 ms  DeleteObjects: 0.013150 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.572785 ms
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.803653 ms (FindLiveObjects: 0.048219 ms CreateObjectMapping: 0.011981 ms MarkObjects: 0.344840 ms  DeleteObjects: 0.398319 ms)
+
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.373772 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 782.
+Total: 0.321169 ms (FindLiveObjects: 0.039744 ms CreateObjectMapping: 0.017534 ms MarkObjects: 0.248986 ms  DeleteObjects: 0.014611 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.557589 ms
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.308018 ms (FindLiveObjects: 0.046465 ms CreateObjectMapping: 0.010520 ms MarkObjects: 0.211872 ms  DeleteObjects: 0.039159 ms)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.545900 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 560.
+Total: 0.514338 ms (FindLiveObjects: 0.048219 ms CreateObjectMapping: 0.012566 ms MarkObjects: 0.419068 ms  DeleteObjects: 0.033899 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.735854 ms
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.403288 ms (FindLiveObjects: 0.040036 ms CreateObjectMapping: 0.011689 ms MarkObjects: 0.297205 ms  DeleteObjects: 0.053771 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.455014 ms
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 316.
+Total: 0.203981 ms (FindLiveObjects: 0.018703 ms CreateObjectMapping: 0.009936 ms MarkObjects: 0.160146 ms  DeleteObjects: 0.014904 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.327013 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.461151 ms (FindLiveObjects: 0.022502 ms CreateObjectMapping: 0.024840 ms MarkObjects: 0.268274 ms  DeleteObjects: 0.144949 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.457351 ms
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 316.
+Total: 0.222685 ms (FindLiveObjects: 0.036821 ms CreateObjectMapping: 0.022502 ms MarkObjects: 0.148164 ms  DeleteObjects: 0.014611 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.356237 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.462320 ms (FindLiveObjects: 0.027470 ms CreateObjectMapping: 0.023671 ms MarkObjects: 0.235835 ms  DeleteObjects: 0.175342 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.450630 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 613.
+Total: 0.361498 ms (FindLiveObjects: 0.049680 ms CreateObjectMapping: 0.016365 ms MarkObjects: 0.282301 ms  DeleteObjects: 0.013150 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.621881 ms
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 379.
+Total: 0.505863 ms (FindLiveObjects: 0.043543 ms CreateObjectMapping: 0.012273 ms MarkObjects: 0.361205 ms  DeleteObjects: 0.088548 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.547068 ms
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 316.
+Total: 0.253077 ms (FindLiveObjects: 0.023086 ms CreateObjectMapping: 0.010812 ms MarkObjects: 0.205150 ms  DeleteObjects: 0.013150 ms)
+

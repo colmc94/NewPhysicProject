@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class HingeJointScript : MonoBehaviour {
-    public BallPedulumScript ball;
+    public GameObject cork;
     private HingeJoint pendulumJoint;
+    private float corkHeight;
 	// Use this for initialization
 	void Start () {
         pendulumJoint = GetComponent<HingeJoint>();
@@ -15,21 +16,13 @@ public class HingeJointScript : MonoBehaviour {
 	}
     public void AddJoint()
     {
+        corkHeight = cork.transform.position.y - transform.position.y;
         pendulumJoint = gameObject.AddComponent<HingeJoint>();
-        pendulumJoint.connectedBody = ball.GetRigidBody();
-        pendulumJoint.anchor = new Vector3(0, 0, 0);
+        pendulumJoint.anchor = new Vector3(0, corkHeight/4, 0);
         pendulumJoint.axis = new Vector3(0, 0, 1);
-        ball.GetRigidBody().useGravity = true;
-        ball.ResetPosition();
     }
     public void DestroyJoint()
     {
         Destroy(pendulumJoint);
-        ball.GetRigidBody().useGravity = false;
-        ball.ResetPosition();
-    }
-    public void MoveJoint(float height)
-    {
-        transform.position = new Vector3(transform.position.x,height-9, transform.position.z);
     }
 }
