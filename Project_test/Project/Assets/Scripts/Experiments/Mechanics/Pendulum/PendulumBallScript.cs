@@ -32,6 +32,7 @@ public class PendulumBallScript : MonoBehaviour {
     {
         if (stopped)
         {
+            timer.ResetTimer();
             AllowMotion();
             ballRB.AddForce(100000, 0, 0);
             stopped = false;

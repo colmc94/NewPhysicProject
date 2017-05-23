@@ -14,7 +14,6 @@ public class HeightScript : MonoBehaviour {
     }
 	
 	void Update () {
-
 	}
     public float getHeight()
     {

@@ -18,7 +18,7 @@ public class NewtonScript : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (glider.IsMoving())
         {
             weightRB.constraints = RigidbodyConstraints.None;
@@ -26,11 +26,11 @@ public class NewtonScript : MonoBehaviour {
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.DownArrow) && newton > 1)
+            if (Input.GetKeyDown(KeyCode.LeftArrow) && newton > 1)
             {
                 newton = newton - 1;
             }
-            if (Input.GetKeyDown(KeyCode.UpArrow) && newton < 10)
+            if (Input.GetKeyDown(KeyCode.RightArrow) && newton < 10)
             {
                 newton = newton + 1;
             }

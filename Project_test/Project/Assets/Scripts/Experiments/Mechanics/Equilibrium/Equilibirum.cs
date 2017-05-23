@@ -11,6 +11,7 @@ public class Equilibirum : MonoBehaviour {
     private bool results,instructions;
     // Use this for initialization
     void Start () {
+        Time.timeScale = 1;
         instructionsGroup.OnCanvasGroup();
     }
 	
@@ -54,7 +55,9 @@ public class Equilibirum : MonoBehaviour {
         clockwiseMoments75.text = "Clockwise Moments about 75cm mark : " + moments75[0].ToString("f3") + "N";
         anticlockwiseMoments75.text = "Anticlockwise Moments about 75cm mark : " + moments75[1].ToString("f3") + "N";
     }
-    private float[] CalcMoments(float f)//Method calculates moments about a point on the ruler. Float paratmeter must be between 0-1 inclusive. Array of size 2 returned containing clockwise moments at position [0] and anticlockwise moments at position [1].
+    //Method calculates moments about a point on the ruler. Float paratmeter must be between 0-1 inclusive. 
+    //Array of size 2 returned containing clockwise moments at position [0] and anticlockwise moments at position [1].
+    private float[] CalcMoments(float f)
     {
         float clockwise=0;
         float anticlockwise=0;

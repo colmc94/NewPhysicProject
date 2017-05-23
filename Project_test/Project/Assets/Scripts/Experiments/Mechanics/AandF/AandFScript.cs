@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class AandFScript : MonoBehaviour
@@ -8,6 +9,7 @@ public class AandFScript : MonoBehaviour
     public GameObject glider, lightGate1, lightGate2;
     public CanvasGroupScript resultsGroup, instructionsGroup;
     public NewtonScript newtonScript;
+    public Text resultsText;
     private Vector3 startPosition;
     private int numberOfResults;
     private float lengthOfVehicle, initalVelocity, finalVelocity, acceleration, s;
@@ -37,5 +39,6 @@ public class AandFScript : MonoBehaviour
         aResults.AddResults(acceleration);
         forceResults.AddResults(newtonScript.GetNewtons(), 0);
         numberOfResults++;
+        resultsText.text = "Result " + numberOfResults + " Recorded";
     }
 }

@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿//Script for the glider of the velocity and acceleration experiment
+using UnityEngine;
 using System.Collections;
-
+//Script for the glider of the velocity and acceleration experiment
 public class GliderScript : MonoBehaviour
 {
     public VandAScript vandaScript;
@@ -8,24 +9,23 @@ public class GliderScript : MonoBehaviour
     private Vector3 startPosition;
     private Rigidbody gliderRB;
     private bool stopped,moving;
-    private float f;
+    private float acceleration;
     // Use this for initialization
     void Start()
     {
-        f = Random.Range(2, 12);
+        acceleration = Random.Range(2, 12);
         startPosition = transform.position;
         gliderRB = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
+    // Fixed Update is called repeatedly at a fixed rate
     void FixedUpdate()
     {
         if (moving)
         {
-            gliderRB.AddForce(f, 0, 0, ForceMode.Acceleration);
+            gliderRB.AddForce(acceleration, 0, 0, ForceMode.Acceleration);//Apply an acceleration to the glider
         }
     }
-    void OnMouseDown()
+    void OnMouseDown()//Called whe nglider object is clicked on
     {
         if (stopped)
         {
@@ -36,19 +36,18 @@ public class GliderScript : MonoBehaviour
             moving = true;
         }
     }
-    void OnCollisionEnter(Collision collisionInfo)
+    void OnCollisionEnter(Collision collisionInfo)//If glider reaches end of track stop and record all current results
     {
         stopped = true;
         moving = false;
-        vandaScript.CalculateAcceleration();
+        vandaScript.AddResults();
     }
-    void ResetPosition()
+    void ResetPosition()//Return to start position and reset timers
     {
-        f = Random.Range(2, 12);
+        acceleration = Random.Range(2, 12);
         transform.position = startPosition;
         stopped = false;
         time1Script.ResetTimer();
         time2Script.ResetTimer();
     }
-
 }

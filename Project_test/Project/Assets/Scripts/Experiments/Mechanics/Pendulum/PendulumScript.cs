@@ -5,10 +5,11 @@ using System.Collections;
 public class PendulumScript : MonoBehaviour {
     public CanvasGroupScript resultsGroup,instructionsGroup;
     public ResultsScript heightResults, timeResults, gravityResults;
-    public Slider timeSlider;
+    public Text resultsText;
     private int numberOfResults;
 
     void Start () {
+        Time.timeScale = 1;
         instructionsGroup.OnCanvasGroup();
     }
 	void Update () {
@@ -21,15 +22,12 @@ public class PendulumScript : MonoBehaviour {
     {
         return ((4 * Mathf.PI * Mathf.PI) * height) / ((time / 30)* (time / 30));
     }
-    public void ChangeTimeScale()
-    {
-        Time.timeScale = timeSlider.value;
-    }
     public void RecordResults(float height, float time)
     {
         heightResults.AddResults(height);
         timeResults.AddResults(time);
         gravityResults.AddResults(CalculateGravity(height, time));
         numberOfResults++;
+        resultsText.text = "Result " + numberOfResults + " Recorded";
     }
 }

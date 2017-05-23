@@ -3,11 +3,12 @@ using System.Collections;
 
 public class MomentumGliderScript : MonoBehaviour
 {
-    public MomentumScript momentumScript;
+    //public MomentumScript momentumScript;
+    public MomentumGlider2Script momentumGlider;
     public TimerScript time1Script, time2Script;
     private Vector3 startPosition;
     private Rigidbody gliderRB;
-    private bool stopped, moving;
+    private bool stopped, moving,collision;
     private float f,mass;
     // Use this for initialization
     void Start()
@@ -25,10 +26,19 @@ public class MomentumGliderScript : MonoBehaviour
         {
             gliderRB.AddForce(f, 0, 0, ForceMode.Acceleration);
         }
+        else if (stopped)
+        {
+            gliderRB.velocity = new Vector3(0, 0, 0);
+        }
     }
     public float getMass()
     {
         return mass;
+    }
+    public void Stop()
+    {
+        stopped = true;
+        moving = false;
     }
     void OnMouseDown()
     {
@@ -41,12 +51,6 @@ public class MomentumGliderScript : MonoBehaviour
             moving = true;
         }
     }
-    void OnCollisionEnter(Collision collisionInfo)
-    {
-        stopped = true;
-        moving = false;
-        momentumScript.CalculateMomentum();
-    }
     void ResetPosition()
     {
         f = Random.Range(2, 12);
@@ -54,6 +58,7 @@ public class MomentumGliderScript : MonoBehaviour
         stopped = false;
         time1Script.ResetTimer();
         time2Script.ResetTimer();
+        momentumGlider.ResetPosition();
     }
 
 }

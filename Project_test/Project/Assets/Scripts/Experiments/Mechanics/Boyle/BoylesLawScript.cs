@@ -8,10 +8,12 @@ public class BoylesLawScript : MonoBehaviour {
     public Text pressureText, volumeText;
     public ResultsScript volumeResults, pressureResults;
     public CanvasGroupScript resultsGroup,instructionsGroup;
+    public Text resultsText;
     private float pressure, volume, k;
     private int numberOfResults;
 
 	void Start () {
+        Time.timeScale = 1;
         k = 1500;
         pressure = 225;
         instructionsGroup.OnCanvasGroup();
@@ -28,11 +30,11 @@ public class BoylesLawScript : MonoBehaviour {
         }
         UpdateGraphics();
     }
-    private void UpdateGraphics()
+    private void UpdateGraphics()//Update boyles law apparatus to show correct readings
     {
         volume = k / pressure;
-        liquid.transform.localScale = new Vector3(1,.995f-(.125f*(volume/10)), 1);
-        dial.transform.rotation = Quaternion.Euler(93 + (29.5f*(pressure/25)), 90, 0);
+        liquid.transform.localScale = new Vector3(1,.995f-(.125f*(volume/10)), 1);//Show correct volume of gas. Scale of y changes depending on volume
+        dial.transform.rotation = Quaternion.Euler(93 + (29.5f*(pressure/25)), 90, 0);//Rotate dial to show correctvalue on pressure gauge. Rotate dial about the y axis.
         pressureText.text = "Pressure : "+pressure.ToString("f2")+ " Pa";
         volumeText.text = "Volume : "+volume.ToString("f2") + " cm^3";
     }
@@ -41,5 +43,6 @@ public class BoylesLawScript : MonoBehaviour {
         volumeResults.AddResults(volume);
         pressureResults.AddResults(pressure);
         numberOfResults++;
+        resultsText.text = "Result " + numberOfResults + " Recorded";
     }
 }
